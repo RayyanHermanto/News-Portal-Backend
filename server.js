@@ -35,8 +35,8 @@ app.get("/api/news", async (req, res) => {
     const responses = await Promise.all(urls.map(url => fetch(url)));
     const data = await Promise.all(responses.map(r => r.json()));
 
-    console.log("Raw API data:");
-    data.forEach((d, i) => console.log(`API ${i}:`, JSON.stringify(d, null, 2)));
+    // console.log("Raw API data:");
+    // data.forEach((d, i) => console.log(`API ${i}:`, JSON.stringify(d, null, 2)));
 
     const merged = [];
 
@@ -125,8 +125,8 @@ app.get("/api/newStart", async (req, res) => {
     const responses = await Promise.all(URLs.map(url => fetch(url)));
     const data = await Promise.all(responses.map(r => r.json()));
 
-    console.log("Raw API data:");
-    data.forEach((d, i) => console.log(`API ${i}:`, JSON.stringify(d, null, 2)));
+    // console.log("Raw API data:");
+    // data.forEach((d, i) => console.log(`API ${i}:`, JSON.stringify(d, null, 2)));
 
     const merged = [];
 

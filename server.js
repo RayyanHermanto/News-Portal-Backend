@@ -188,6 +188,7 @@ app.get("/api/newStart", async (req, res) => {
     } else console.log("NewsData.io returned no articles");
 
     if (merged.length === 0) console.log("Merged is empty, nothing to return");
+    
 
     res.json({ count: merged.length, results: merged });
 

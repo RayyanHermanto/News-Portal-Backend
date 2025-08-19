@@ -19,13 +19,14 @@ const thenewsapiKey = process.env.THENEWSAPI_KEY;
 const newsdataApiKey = process.env.NEWSDATA_KEY;
 
 app.get("/api/news", async (req, res) => {
-  const query = req.query.q || "AI";
+  const userQuery = req.query.q || "";
+  const query = `AI ${userQuery}`.trim();
 
   try {
 
     const urls = [
-        `https://newsapi.org/v2/everything?language=en&q=${encodeURIComponent(query)}&apiKey=${newsApiKey}`,
-        `https://gnews.io/api/v4/search?q=${encodeURIComponent(query)}&lang=en&sortby=relevance&apikey=${gnewsApiKey}`,
+        `https://newsapi.org/v2/everything?language=en&q=${encodeURIComponent(query)}&sortBy&apiKey=${newsApiKey}`,
+        `https://gnews.io/api/v4/search?q=${encodeURIComponent(query)}&lang=en&sortby=publishedAt,relevance&apikey=${gnewsApiKey}`,
         `https://api.thenewsapi.com/v1/news/all?api_token=${thenewsapiKey}&search=${encodeURIComponent(query)}`,
         `https://newsdata.io/api/1/latest?apikey=${newsdataApiKey}&q=${encodeURIComponent(query)}&timezone=Asia/Jakarta`
     ];

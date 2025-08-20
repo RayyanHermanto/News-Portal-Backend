@@ -5,7 +5,6 @@ Backend service for the **News Portal** application built with **Node.js** and *
 ## Features
 
 * Securely store API Keys on the server environment (e.g., Railway).
-* Retrieve API Keys for frontend use without exposing them in code.
 * Return dummy news data from `dummy.json` for testing.
 * Fetch news based on search queries.
 * Fetch initial news for page reload.

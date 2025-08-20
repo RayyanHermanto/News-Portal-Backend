@@ -1,0 +1,187 @@
+{
+    "query": "AI",
+    "count": 20,
+    "results": [
+      {
+        "id": "newsapi-0",
+        "title": "AI Revolutionizes Web Development AI Revolutionizes Web Development AI Revolutionizes Web Development",
+        "date": "2025-08-20T12:34:56Z",
+        "content": "Artificial Intelligence is speeding up web development processes.",
+        "url": "https://example.com/ai-web-dev",
+        "image": "https://picsum.photos/400/200?random=1",
+        "source": "NewsAPI"
+      },
+      {
+        "id": "newsapi-1",
+        "title": "AI in Education: Pros and Cons",
+        "date": "2025-08-19T08:00:00Z",
+        "content": "Educators debate the role of AI in schools.",
+        "url": "https://example.com/ai-education",
+        "image": "https://picsum.photos/400/200?random=2",
+        "source": "NewsAPI"
+      },
+      {
+        "id": "gnews-0",
+        "title": "AI Powers Next-Gen Healthcare",
+        "date": "2025-08-18T10:30:00Z",
+        "content": "Hospitals adopt AI to assist in diagnosis.",
+        "url": "https://example.com/ai-healthcare",
+        "image": "https://picsum.photos/400/200?random=3",
+        "source": "GNews"
+      },
+      {
+        "id": "gnews-1",
+        "title": "AI and Robotics in 2025 AI and Robotics in 2025 AI and Robotics in 2025 AI and Robotics in 2025",
+        "date": "2025-08-17T15:45:00Z",
+        "content": "Robots powered by AI are entering everyday life.",
+        "url": "https://example.com/ai-robotics",
+        "image": "https://picsum.photos/400/200?random=4",
+        "source": "GNews"
+      },
+      {
+        "id": "thenewsapi-0",
+        "title": "The Future of AI Governance",
+        "date": "2025-08-16T09:20:00Z",
+        "content": "Governments start regulating AI usage.",
+        "url": "https://example.com/ai-governance",
+        "image": "https://picsum.photos/400/200?random=5",
+        "source": "TheNewsAPI"
+      },
+      {
+        "id": "thenewsapi-1",
+        "title": "AI in Climate Change Research",
+        "date": "2025-08-15T14:10:00Z",
+        "content": "Researchers use AI to model climate impact.",
+        "url": "https://example.com/ai-climate",
+        "image": "https://picsum.photos/400/200?random=6",
+        "source": "TheNewsAPI"
+      },
+      {
+        "id": "newsdata-0",
+        "title": "AI Transforms E-Commerce",
+        "date": "2025-08-14T11:45:00Z",
+        "content": "Online shops personalize shopping using AI.",
+        "url": "https://example.com/ai-ecommerce",
+        "image": "https://picsum.photos/400/200?random=7",
+        "source": "NewsData.io"
+      },
+      {
+        "id": "newsdata-1",
+        "title": "AI in Space Exploration",
+        "date": "2025-08-13T19:00:00Z",
+        "content": "AI helps analyze deep space data from telescopes.",
+        "url": "https://example.com/ai-space",
+        "image": "https://picsum.photos/400/200?random=8",
+        "source": "NewsData.io"
+      },
+      {
+        "id": "newsapi-2",
+        "title": "AI Boosts Productivity in Offices",
+        "date": "2025-08-12T09:30:00Z",
+        "content": "Companies adopt AI assistants to increase workflow.",
+        "url": "https://example.com/ai-productivity",
+        "image": "https://picsum.photos/400/200?random=9",
+        "source": "NewsAPI"
+      },
+      {
+        "id": "newsapi-3",
+        "title": "AI in Gaming: Smarter NPCs",
+        "date": "2025-08-11T16:00:00Z",
+        "content": "Game developers use AI to create more realistic characters.",
+        "url": "https://example.com/ai-gaming",
+        "image": "https://picsum.photos/400/200?random=10",
+        "source": "NewsAPI"
+      },
+      {
+        "id": "gnews-2",
+        "title": "AI and Cybersecurity",
+        "date": "2025-08-10T13:15:00Z",
+        "content": "AI detects and prevents hacking attempts faster.",
+        "url": "https://example.com/ai-cybersecurity",
+        "image": "https://picsum.photos/400/200?random=11",
+        "source": "GNews"
+      },
+      {
+        "id": "gnews-3",
+        "title": "AI in Transportation",
+        "date": "2025-08-09T07:50:00Z",
+        "content": "Self-driving cars are becoming more reliable with AI.",
+        "url": "https://example.com/ai-transport",
+        "image": "https://picsum.photos/400/200?random=12",
+        "source": "GNews"
+      },
+      {
+        "id": "thenewsapi-2",
+        "title": "AI Enhances Medical Imaging",
+        "date": "2025-08-08T20:40:00Z",
+        "content": "Doctors use AI to interpret X-rays and MRIs.",
+        "url": "https://example.com/ai-medical",
+        "image": "https://picsum.photos/400/200?random=13",
+        "source": "TheNewsAPI"
+      },
+      {
+        "id": "thenewsapi-3",
+        "title": "AI Ethics Debate Heats Up",
+        "date": "2025-08-07T18:25:00Z",
+        "content": "Experts warn about AI's potential misuse.",
+        "url": "https://example.com/ai-ethics",
+        "image": "https://picsum.photos/400/200?random=14",
+        "source": "TheNewsAPI"
+      },
+      {
+        "id": "newsdata-2",
+        "title": "AI in Agriculture",
+        "date": "2025-08-06T08:10:00Z",
+        "content": "Farmers adopt AI for crop prediction and pest control.",
+        "url": "https://example.com/ai-agriculture",
+        "image": "https://picsum.photos/400/200?random=15",
+        "source": "NewsData.io"
+      },
+      {
+        "id": "newsdata-3",
+        "title": "AI in Customer Support",
+        "date": "2025-08-05T12:55:00Z",
+        "content": "AI chatbots improve user experience in service industries.",
+        "url": "https://example.com/ai-chatbots",
+        "image": "https://picsum.photos/400/200?random=16",
+        "source": "NewsData.io"
+      },
+      {
+        "id": "newsapi-4",
+        "title": "AI Detects Fake News",
+        "date": "2025-08-04T17:45:00Z",
+        "content": "New AI systems fight misinformation online.",
+        "url": "https://example.com/ai-fakenews",
+        "image": "https://picsum.photos/400/200?random=17",
+        "source": "NewsAPI"
+      },
+      {
+        "id": "gnews-4",
+        "title": "AI in Financial Markets",
+        "date": "2025-08-03T14:20:00Z",
+        "content": "Banks rely on AI for fraud detection and trading.",
+        "url": "https://example.com/ai-finance",
+        "image": "https://picsum.photos/400/200?random=18",
+        "source": "GNews"
+      },
+      {
+        "id": "thenewsapi-4",
+        "title": "AI and Creative Arts",
+        "date": "2025-08-02T09:05:00Z",
+        "content": "Artists experiment with AI in digital paintings.",
+        "url": "https://example.com/ai-arts",
+        "image": "https://picsum.photos/400/200?random=19",
+        "source": "TheNewsAPI"
+      },
+      {
+        "id": "newsdata-4",
+        "title": "AI in Sports Analytics",
+        "date": "2025-08-01T07:30:00Z",
+        "content": "Teams use AI to improve game strategy and training.",
+        "url": "https://example.com/ai-sports",
+        "image": "https://picsum.photos/400/200?random=20",
+        "source": "NewsData.io"
+      }
+    ]
+  }
+  

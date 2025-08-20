@@ -2,6 +2,8 @@ import express from "express";
 import fetch from "node-fetch";
 import cors from "cors";
 import dotenv from 'dotenv';
+import fs from "fs";
+
 dotenv.config();
 
 
@@ -9,8 +11,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(cors());
 
+app.get("/api/dummy-news", (req, res) => {
+  const dummy = JSON.parse(fs.readFileSync("./dummy.json", "utf-8"));
+  res.json(dummy);
+});
+
 app.get("/", (req, res) => {
-  res.send("✅ News Backend API is running!");
+  res.send("News Backend API is running!");
 });
 
 const newsApiKey = process.env.NEWSAPI_KEY;
@@ -35,10 +42,7 @@ app.get("/api/news", async (req, res) => {
 
     const responses = await Promise.all(urls.map(url => fetch(url)));
     const data = await Promise.all(responses.map(r => r.json()));
-
-    // console.log("Raw API data:");
-    // data.forEach((d, i) => console.log(`API ${i}:`, JSON.stringify(d, null, 2)));
-
+    
     const merged = [];
 
     if (data[0]?.articles?.length > 0) {
@@ -115,19 +119,16 @@ app.get("/api/news", async (req, res) => {
 app.get("/api/newStart", async (req, res) => {
   try {
     const URLs = [
-      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${newsApiKey}`,
-      `https://gnews.io/api/v4/top-headlines?category=general&apikey=${gnewsApiKey}`,
-      `https://api.thenewsapi.com/v1/news/headlines?locale=us&language=en&api_token=${thenewsapiKey}`,
-      `https://newsdata.io/api/1/latest?country=us&apikey=${newsdataApiKey}`
+      `https://newsapi.org/v2/top-headlines?language=en&q=ai&sortBy&country=us&apiKey=${newsApiKey}`,
+      `https://gnews.io/api/v4/top-headlines?q=ai&lang=en&sortby=publishedAt,relevance&apikey=${gnewsApiKey}`,
+      `https://api.thenewsapi.com/v1/news/headlines?locale=us&language=en&api_token=${thenewsapiKey}&search=ai`,
+      `https://newsdata.io/api/1/latest?country=us&language=en,id&q=ai&apikey=${newsdataApiKey}`
     ];
 
     console.log("Fetching from URLs:", URLs);
 
     const responses = await Promise.all(URLs.map(url => fetch(url)));
     const data = await Promise.all(responses.map(r => r.json()));
-
-    // console.log("Raw API data:");
-    // data.forEach((d, i) => console.log(`API ${i}:`, JSON.stringify(d, null, 2)));
 
     const merged = [];
 
